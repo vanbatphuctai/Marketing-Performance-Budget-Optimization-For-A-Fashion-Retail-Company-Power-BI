@@ -210,6 +210,9 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 ### 2️⃣ Data Relationships:
 
+<img width="1300" alt="image" src="https://github.com/user-attachments/assets/cb14f377-54c4-4533-a8e2-00e225f0e512" />
+
+
 ### 📐 Data Model Relationships
 
 | From Table | To Table | Join Key | Relationship Type |
