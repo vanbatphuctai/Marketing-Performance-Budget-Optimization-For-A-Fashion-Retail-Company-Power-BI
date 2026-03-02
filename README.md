@@ -366,3 +366,138 @@ This phase is implemented and validated directly within the interactive dashboar
 
 ### I. Business Overview
 
+<img width="1300" alt="image" src="https://github.com/user-attachments/assets/3bc2785b-173f-4e3e-ae5b-70026f2d09c0" />
+
+### 📌 Key Findings:
+
+#### 1. Overall Marketing Performance  
+
+**ROAS reached 7.67**, generating **3.02bn Ad Sales** from **394.13M Ad Spend**.  
+Marketing contributed **63.34% of Total Revenue**, while Direct Sales accounted for **1.75bn**.  
+→ Growth is **strongly marketing-driven with high return efficiency**.
+
+#### 2. Weekly ROAS & Spend Trend  
+
+ROAS remained stable (~7.6–7.7) before peaking at **~9.0 (Week 5)**.  
+Ad Spend peaked around **Week 3–4**, with Ad Sales following the same trend.  
+→ Indicates **performance optimization improved toward later weeks**.
+
+#### 3. Top Campaign Performance  
+
+Top campaign achieved **ROAS > 100**, significantly outperforming others.  
+Clear performance gap between **Top 3 vs Bottom campaigns**.  
+→ Budget should be **reallocated to high-ROAS campaigns**.
+
+#### 4. Product Type Performance by ROAS  
+
+**“Váy Chiết Eo Ôm” led with ROAS 22.09**, far above portfolio average.  
+Most product types clustered between **ROAS 4–10**.  
+→ A few SKUs act as **core efficiency drivers**.
+
+#### 5. Revenue Structure: Ad vs Direct  
+
+**Ad Sales = 63% of total revenue**.  
+→ Business is **highly dependent on paid marketing performance**.
+
+#### 6. Budget Utilization  
+
+Ad Spend reached **82.75% of allocated budget**.  
+→ Controlled spending with **room to scale high-performing segments**.
+
+#### 7. Geographic Performance  
+
+ROAS & Spend concentrated in **major urban cities in Vietnam**.  
+→ Urban markets remain **primary conversion & revenue hubs**.
+
+
+### II. Marketing Analysis
+
+<img width="1300" alt="image" src="https://github.com/user-attachments/assets/13cefbbb-fe61-4b07-925e-67bd50ef8c11" />
+
+### 📌 Key Findings:
+
+#### 1. Overall Marketing Performance  
+
+**ROAS reached 7.67** across 175 campaigns, generating **3.02bn Ad Sales** from **394.13M Spend**.  
+Cost efficiency remained stable with **CPC = 9.46K**, **CPM = 77.14K**, **CTR = 0.01**.  
+→ Performance is **efficient and cost-controlled at scale**.
+
+#### 2. Campaign Revenue Concentration  
+
+Top campaign delivered **0.26bn Ad Sales**, followed by **0.16bn** and **0.11bn**.  
+Clear performance gap between top-tier and lower campaigns.  
+→ Revenue is **highly concentrated**, scaling top performers will maximize returns.
+
+#### 3. Marketing Funnel Efficiency  
+
+From **5,108.97K impressions → 41.65K clicks → 2.27K orders**.  
+Strong top-of-funnel reach, but noticeable drop from **Click → Order**.  
+→ Optimization opportunity lies in **mid-to-bottom funnel conversion**.
+
+#### 4. Cost & Engagement Trend (CTR / CPC / CPM)  
+
+**CTR peaked in Week 4**, indicating strongest engagement.  
+**CPC highest in Week 2**, then improved in later weeks.  
+**CPM increased after Week 1** but efficiency still improved.  
+→ Cost structure stabilized while **conversion efficiency improved toward Week 5**.
+
+#### 5. High Spend – Low Return Campaigns  
+
+Several campaigns show **high spend but weak ROAS**.  
+Investment is not evenly efficient across portfolio.  
+→ Budget reallocation is required to **improve capital productivity**.
+
+
+### III. Product Analysis
+
+<img width="1300" alt="image" src="https://github.com/user-attachments/assets/68fae7f9-dcca-4732-819e-b5b3a8c2724a" />
+
+### 📌 Key Findings:
+
+#### 1. Overall Product Performance  
+
+Ad Sales reached **3.02bn** from **394.13M Ad Spend**, delivering **ROAS = 7.67**.  
+Total Ad Orders recorded **2,267**, with **CPA = 173.85K** and **AOV = 1.33M**.  
+→ Product portfolio is **profitable with strong return efficiency**.
+
+#### 2. ROAS Distribution by Product  
+
+Majority of products cluster at **ROAS < 20**,  
+while a few outliers reach **ROAS ~59 and 86**.  
+→ Performance is **highly skewed**, with a small group driving exceptional returns.
+
+#### 3. Product Category Performance  
+
+**Váy Chiết Eo Ôm** & **Váy Suông Xòe** generate high Ad Sales with solid ROAS.  
+**Áo Tách Set** shows higher spend relative to return.  
+→ Dresses are the **core revenue driver**, while some categories require optimization.
+
+#### 4. Sales Structure by Product Type  
+
+Several product types rely heavily on **Ad Sales contribution (>50%)**.  
+A few categories show stronger Direct Sales proportion.  
+→ Business remains **paid-traffic dependent**, but diversification exists.
+
+#### 5. Campaign & Product Efficiency Summary  
+
+Top-performing SKUs (e.g., Gavin Trouser – ROAS 6.21) outperform portfolio average.  
+Overall **Ad Spend/Budget = 82.75%**, indicating controlled scaling.  
+→ Budget allocation is relatively efficient but can be optimized toward high-ROAS SKUs.
+
+#### 6. Cost per Acquisition (CPA) Variation  
+
+CPA ranges widely from **~476K to ~923K** across products.  
+Higher CPA products do not always generate proportional sales.  
+→ Significant opportunity to **rebalance spend toward lower-CPA, higher-ROAS items**.
+
+
+# 🔎 Final Conclusion & Recommendation
+
+| Strategy | Insight | Recommendation |
+|-----------|----------|----------------|
+| 🚀 **1. Marketing Efficiency & Growth Scaling** | - **ROAS = 7.67**, generating **3.02bn Ad Sales** from **394.13M Spend**. <br>- Marketing contributes **63% of total revenue** (high paid-media dependence). <br>- ROAS peaked at ~9.0 in Week 5, showing optimization impact. | - Maintain ROAS ≥ 7.5 while scaling. <br>- Increase budget during high-efficiency weeks. <br>- Strengthen Direct Sales to reduce long-term paid dependency. |
+| 🎯 **2. Campaign Portfolio Optimization** | - Revenue highly concentrated (Top campaign ~0.26bn). <br>- Clear performance gap between Top vs Bottom campaigns. <br>- Several high-spend campaigns deliver weak ROAS. | - Reallocate budget to Top 10–20% campaigns. <br>- Pause or restructure low-ROAS campaigns. <br>- Apply structured A/B testing to replicate winning models. |
+| 🛍 **3. Product & SKU Optimization** | - “Váy Chiết Eo Ôm” achieved **ROAS 22.09** (well above average). <br>- Majority of SKUs cluster ROAS 4–10. <br>- Dresses act as core revenue driver. | - Prioritize scaling high-ROAS SKUs. <br>- Bundle/upsell to increase AOV (1.33M). <br>- Reduce spend on high-CPA, low-return SKUs. |
+| 🔁 **4. Funnel & Conversion Optimization** | - 5.1M impressions → 41.6K clicks → 2.27K orders. <br>- Significant drop from Click → Order stage. <br>- CTR peaked Week 4; CPC improved after Week 2. | - Optimize product pages & checkout UX. <br>- Strengthen retargeting for high-intent users. <br>- Improve offer structure (bundle, urgency, promo). |
+| 💰 **5. Cost Control & Capital Productivity** | - Budget utilization at **82.75%** (room to scale). <br>- CPA varies widely (~476K–923K). <br>- Higher CPA ≠ higher revenue. | - Shift budget toward lower-CPA, higher-ROAS items. <br>- Set CPA ceiling per category. <br>- Monitor marginal ROAS before scaling. |
+| 🌏 **6. Geographic Focus Strategy** | - ROAS & Spend concentrated in major urban cities. <br>- Urban markets are primary revenue hubs. | - Maintain Tier-1 city focus. <br>- Test expansion in Tier-2 with pilot budgets. <br>- Localize creatives & offers by region. |
