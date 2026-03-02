@@ -83,10 +83,10 @@ The dataset integrates sales transactions, campaign-level spending, SKU-level al
 ### 1️⃣ Tables Used
 The dataset consists of four relational tables, connecting marketing investment with sales outcomes at both campaign and product levels.  
 
-📢 Table 1: mkt_camp_by_sku_cost - Contains SKU-level marketing spending and performance data (3,875 records), enabling granular ROAS, ROI, and product-level efficiency analysis across 855 campaigns.
+📢 mkt_camp_by_sku_cost - Contains SKU-level marketing spending and performance data (3,875 records), enabling granular ROAS, ROI, and product-level efficiency analysis across 855 campaigns.
 
 <details>
-<summary><strong>Table 1: Orders</strong></summary>
+<summary><strong>Table 1: mkt_camp_by_sku_cost</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -114,10 +114,10 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 </details>
 
-📊 Table 2: mkt_camp_cost - Stores campaign-level budget and advertising efficiency metrics, supporting overall budget monitoring and performance evaluation across 855 campaigns.
+📊 mkt_camp_cost - Stores campaign-level budget and advertising efficiency metrics, supporting overall budget monitoring and performance evaluation across 855 campaigns.
 
 <details>
-<summary><strong>Table 2: Returns</strong></summary>
+<summary><strong>Table 2: mkt_camp_cost</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -134,10 +134,10 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 </details>
 
-📊 🛒 Table 3: order - Contains nearly 3,500 transaction records and serves as the primary sales fact table for revenue, margin, and customer analysis.
+🛒 order - Contains nearly 3,500 transaction records and serves as the primary sales fact table for revenue, margin, and customer analysis.
 
 <details>
-<summary><strong>Table 2: Returns</strong></summary>
+<summary><strong>Table 3: order</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -166,10 +166,10 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 </details>
 
-📊 👗 Table 4: danh sach san pham - Contains master data for 200 distinct products, supporting pricing, margin, inventory, and performance allocation analysis.
+👗 danh sach san pham - Contains master data for 200 distinct products, supporting pricing, margin, inventory, and performance allocation analysis.
 
 <details>
-<summary><strong>Table 2: Returns</strong></summary>
+<summary><strong>Table 4: danh sach san pham</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -225,11 +225,11 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 ### 🧠 Model Structure Explanation (Accurate to Diagram)
 
-### 🔹 Fact Tables
+#### 🔹 Fact Tables
 - fact_order → Sales transactions (~3,500 records)  
 - fact_mkt_camp_by_sku_cost → SKU-level marketing performance (3,875 records)  
 
-### 🔹 Dimension Tables
+#### 🔹 Dimension Tables
 - dim_danh sach san pham → Product dimension  
 - dim_mkt_camp_cost → Campaign dimension  
 - dim_date → Time dimension  
@@ -341,6 +341,9 @@ Based on the Growth Formula breakdown of each view, brainstorm related dimension
 ### STAGE 3: IDEATE – STRUCTURE IDEA
 
 #### Scorecard Metrics
+
+| Metric 1 | Metric 2 | Metric 3 | Metric 4 | Metric 5 | Metric 6 |
+|----------|----------|----------|----------|----------|----------|
 | Return on Ad Spend (ROAS) | Ad Spend | Ad Sales | Total Clicks | Marketing Share | Direct Sales |
 
 ---
