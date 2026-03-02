@@ -5,7 +5,7 @@
 
 ---
 
-# 📑 Table of Contents
+## 📑 Table of Contents
 - [📌 Background & Overview](#-background--overview)
 - [📂 Dataset Description & Data Structure](#-dataset-description--data--structure)
 - [🧠 Design Thinking Process](#-design-thinking-process)
@@ -14,9 +14,9 @@
 
 ---
 
-# 📌 Background & Overview
+## 📌 Background & Overview
 
-## 🎯 Objective
+### 🎯 Objective
 Developed a Power BI dashboard to analyze marketing spending efficiency and its impact on sales performance for a fashion retail & e-commerce company.  
 
 The project transforms raw marketing and sales data into actionable insights, supporting leadership in optimizing marketing budget allocation and improving ROI.  
@@ -29,7 +29,7 @@ The project transforms raw marketing and sales data into actionable insights, su
 
 ---
 
-## 👤 Target Users
+### 👤 Target Users
 - C-Level Executives (CEO, CMO)  
 - Marketing Managers  
 - Sales & E-commerce teams  
@@ -37,7 +37,7 @@ The project transforms raw marketing and sales data into actionable insights, su
 
 ---
 
-## ❓ Key Business Questions
+### ❓ Key Business Questions
 - How effectively is marketing budget being utilized?  
 - Which campaigns, channels, and SKUs generate the highest ROI?  
 - Are we overspending on low-performing campaigns?  
@@ -45,7 +45,7 @@ The project transforms raw marketing and sales data into actionable insights, su
 
 ---
 
-## 🎯 Project Outcome
+### 🎯 Project Outcome
 Marketing activities significantly contributed to revenue generation; however, performance varied widely across campaigns and SKUs.  
 
 Some campaigns delivered strong ROI and high conversion efficiency, while others consumed large budgets with limited incremental revenue impact.  
@@ -56,14 +56,14 @@ The dashboard enables leadership to align budget allocation, campaign performanc
 
 ---
 
-# 📂 Dataset Description & Data Structure
+## 📂 Dataset Description & Data Structure
 
-## 📌 Company Overview
+### 📌 Company Overview
 The company operates in the fashion retail and e-commerce industry, executing multi-channel marketing campaigns (both online and offline) to drive sales and brand awareness.  
 
 ---
 
-## 📌 Data Source
+### 📌 Data Source
 - **Source:** Internal Marketing & Sales Data  
 - **Format:** Excel (.xlsx)  
 - **Scope:** Multi-channel marketing & retail sales performance  
@@ -78,16 +78,15 @@ The dataset integrates sales transactions, campaign-level spending, SKU-level al
 
 ---
 
-# 📊 Data Structure
+### 📊 Data Structure
 
-## 1️⃣ Tables Used
+### 1️⃣ Tables Used
 The dataset consists of four relational tables, connecting marketing investment with sales outcomes at both campaign and product levels.  
 
----
+📢 Table 1: mkt_camp_by_sku_cost - Contains SKU-level marketing spending and performance data (3,875 records), enabling granular ROAS, ROI, and product-level efficiency analysis across 855 campaigns.
 
-# 📢 Table 1: mkt_camp_by_sku_cost
-
-Contains SKU-level marketing spending and performance data (3,875 records), enabling granular ROAS, ROI, and product-level efficiency analysis across 855 campaigns.
+<details>
+<summary><strong>Table 1: Orders</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -113,11 +112,12 @@ Contains SKU-level marketing spending and performance data (3,875 records), enab
 | Tiền đã chạy Theo Sản phẩm | DECIMAL | Marketing cost allocated to each specific product. |
 | Ngân sách | DECIMAL | Budget allocated corresponding to the product or campaign. |
 
----
+</details>
 
-# 📊 Table 2: mkt_camp_cost
+📊 Table 2: mkt_camp_cost - Stores campaign-level budget and advertising efficiency metrics, supporting overall budget monitoring and performance evaluation across 855 campaigns.
 
-Stores campaign-level budget and advertising efficiency metrics, supporting overall budget monitoring and performance evaluation across 855 campaigns.
+<details>
+<summary><strong>Table 2: Returns</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -132,11 +132,12 @@ Stores campaign-level budget and advertising efficiency metrics, supporting over
 | Lượt hiển thị | INT | Total number of impressions generated. |
 | Click | INT | Total number of clicks generated. |
 
----
+</details>
 
-# 🛒 Table 3: order
+📊 🛒 Table 3: order - Contains nearly 3,500 transaction records and serves as the primary sales fact table for revenue, margin, and customer analysis.
 
-Contains nearly 3,500 transaction records and serves as the primary sales fact table for revenue, margin, and customer analysis.
+<details>
+<summary><strong>Table 2: Returns</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -163,11 +164,12 @@ Contains nearly 3,500 transaction records and serves as the primary sales fact t
 | Trạng thái | VARCHAR | Order status (completed, canceled, etc.). |
 | Lý do hủy | VARCHAR | Reason for cancellation (if applicable). |
 
----
+</details>
 
-# 👗 Table 4: danh sach san pham
+📊 👗 Table 4: danh sach san pham - Contains master data for 200 distinct products, supporting pricing, margin, inventory, and performance allocation analysis.
 
-Contains master data for 200 distinct products, supporting pricing, margin, inventory, and performance allocation analysis.
+<details>
+<summary><strong>Table 2: Returns</strong></summary>
 
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
@@ -204,9 +206,11 @@ Contains master data for 200 distinct products, supporting pricing, margin, inve
 | SL tồn | INT | Remaining inventory quantity. |
 | Tổng SL bán theo Campaign | INT | Total quantity sold attributed to campaign. |
 
----
+</details>
 
-# 📐 Data Model Relationships
+### 2️⃣ Data Relationships:
+
+### 📐 Data Model Relationships
 
 | From Table | To Table | Join Key | Relationship Type |
 |------------|----------|----------|-------------------|
@@ -219,13 +223,13 @@ Contains master data for 200 distinct products, supporting pricing, margin, inve
 
 ---
 
-# 🧠 Model Structure Explanation (Accurate to Diagram)
+### 🧠 Model Structure Explanation (Accurate to Diagram)
 
-## 🔹 Fact Tables
+### 🔹 Fact Tables
 - fact_order → Sales transactions (~3,500 records)  
 - fact_mkt_camp_by_sku_cost → SKU-level marketing performance (3,875 records)  
 
-## 🔹 Dimension Tables
+### 🔹 Dimension Tables
 - dim_danh sach san pham → Product dimension  
 - dim_mkt_camp_cost → Campaign dimension  
 - dim_date → Time dimension  
@@ -280,20 +284,19 @@ Contains master data for 200 distinct products, supporting pricing, margin, inve
 
 ### DEFINE POINT OF VIEW  
 
-| Dimension | Group 1 | Group 2 | Group 3 | Group 4 |
-|------------|----------|----------|----------|----------|
-| Brainstorming Point of View | Overall Business | Marketing Campaign | Product (SKU) | Time |
-|  | Customer | Region / Area | Budget & Cost |  |
+| Dimension | View 1 | View 2 | View 3 | View 4 | View 5 | View 6 | View 7 |
+|------------|----------|----------|----------|----------|----------|----------|----------|
+| Brainstorming Point of View | Overall Business | Marketing Campaign | Product (SKU) | Time | Customer | Geography / Region | Budget & Cost |
 
 
 ### DEFINE KEY BUSINESS VIEWS  
 
 | View | Description | Why do stakeholders need this view? |
 |------|------------|--------------------------------------|
-| View 1 – Overall Business | Overall business overview. | - Total revenue, profit, marketing cost, growth rate. <br> - Compare direct sales vs marketing-driven sales. |
-| View 2 – Marketing Campaign | Marketing campaign performance. | - Campaign effectiveness (ROAS, CTR, CPC, revenue by campaign). |
-| View 3 – Product (SKU) | Performance by product or product group. | - Revenue, cost, and ROI by product/SKU. |
-| View 4 – Time | Performance over time. | - Daily, weekly, monthly, quarterly trend analysis to identify patterns and seasonality. |
+| View 1 – Overview | Overall business overview. | - Total revenue, profit, marketing cost, growth rate. <br> - Compare direct sales vs marketing-driven sales. |
+| View 2 – Marketing Analysis | Marketing campaign performance. | - Campaign effectiveness (ROAS, CTR, CPC, revenue by campaign). |
+| View 3 – Product Analysis | Performance by product or product group. | - Revenue, cost, and ROI by product/SKU. |
+| View 4 – Time | - Daily, weekly, monthly, quarterly trend analysis to identify patterns and seasonality. |
 
 
 ### NORTHSTAR FORMULA: GROWTH FORMULA – ROAS  
@@ -305,3 +308,58 @@ Contains master data for 200 distinct products, supporting pricing, margin, inve
 | Growth formula breakdown by View 2 (Campaign) | **Campaign ROAS** = Campaign Revenue / Campaign Cost |
 | Growth formula breakdown by View 3 (Product / SKU) | **Product ROAS** = SKU Revenue / SKU Marketing Cost |
 | Growth formula breakdown by View 4 (Time) | **Time-based ROAS** = Revenue by Time Period / Advertising Cost by Time Period |
+
+### 3️⃣ Ideate
+
+### STAGE 3: IDEATE – BRAINSTORMING
+
+**Start with:**  
+Based on the Growth Formula breakdown of each view, brainstorm related dimensions and insights aligned with the NorthStar Metric.
+
+---
+
+#### Overview Layer (Core Metrics)
+
+| Metric 1 | Metric 2 | Metric 3 | Metric 4 | Metric 5 | Metric 6 |
+|----------|----------|----------|----------|----------|----------|
+| Return on Ad Spend (ROAS) | Ad Spend | Ad Sales | Total Clicks | Marketing Share | Direct Sales |
+
+| Metric 7 | Metric 8 | Metric 9 | Metric 10 | Metric 11 | Metric 12 |
+|----------|----------|----------|-----------|-----------|-----------|
+| CPC | CPM | CTR | Total Campaigns | AOV | Cost per Acquisition (CPA) |
+
+---
+
+#### Brainstorming Breakdown
+
+| Idea Name | Layer 0 Dimension (Overall) | Layer 1 Dimension (1D Breakdown) | Layer 2 Dimension (2D Breakdown) | Anything Important Missed? |
+|------------|----------------------------------|-----------------------------------|-----------------------------------|----------------------------|
+| **View 1: Marketing Overview** | - Total ROAS <br> - Ad Spend <br> - Ad Sales <br> - Direct Sales <br> - Total Clicks <br> - Marketing Share (Sales on Marketing / Total Revenue) | - Track ROAS performance over time (Day/Week/Month) <br> - Compare campaign effectiveness <br> - Identify highest-performing product categories | - Compare revenue mix: Ad Sales vs Direct Sales by Product Type <br> - Manage Ad Spend vs Budget <br> - Map ROAS & Ad Sales by region (Vietnam) | |
+| **View 2: Marketing Analysis** | - ROAS (Primary KPI) <br> - Total Active Campaigns <br> - Total Spend <br> - CPC (Cost per Click) <br> - CPM (Cost per 1,000 Impressions) <br> - CTR (Click-Through Rate) | - Top 10 campaigns by ROAS & Ad Sales <br> - Funnel tracking: Impressions → Clicks → Ad Orders <br> - Detect high-spend but low-return campaigns | - Weekly campaign summary (ROAS, Spend, Clicks, Orders) <br> - Trend analysis of CPC / CPM / CTR over time <br> | |
+| **View 3: Product Analysis** | - ROAS <br> - Ad Sales <br> - Ad Spend <br> - Total Ad Orders <br> - CPA (Cost per Ad Order) <br> - AOV (Average Order Value) | - Evaluate advertising effectiveness for each product (SKU) <br> - Top 10 advertising campaigns by product sales performance <br> - Revenue structure (Ad Sales / Total Sales) contributed by each Product Type | - Summarize marketing performance by product → clearly show the relationship between spend – revenue – efficiency – budget  <br> - Measure advertising spending efficiency by product → determine how much advertising cost is required to generate one order | |
+
+### STAGE 3: IDEATE – STRUCTURE IDEA
+
+#### Scorecard Metrics
+| Return on Ad Spend (ROAS) | Ad Spend | Ad Sales | Total Clicks | Marketing Share | Direct Sales |
+
+---
+#### Structured Idea Breakdown
+
+| Idea Name | Very Important Information | Important Information | Detailed Information | Anything Important Missed? |
+|------------|----------------------------|------------------------|----------------------|----------------------------|
+| **View 1 – Marketing Overview (Page 1)** | **KPI Cards:** <br> - Total ROAS <br> - Ad Sales <br> - Direct Sales <br> - Total Orders <br> - Total Ad Spend <br> - Marketing Contribution Ratio (Ad Sales / Total Sales) <br><br> **Slicers:** Date (Day/Week/Month), Product Category, Campaign Name | - Line Chart: ROAS Trend over Time (vs Ad Sales & Ad Spend) <br> - Bar Chart: Top 5 Campaigns by ROAS <br> - Bar Chart: ROAS by Product Type | - Pie Chart: Ad Sales vs Direct Sales <br> - Gauge: Ad Spend vs Budget (Target) <br> - Map: ROAS vs Total Spend vs Ad Sales by Region (Vietnam) |  |
+| **View 2 – Marketing Analysis (Page 2)** | - ROAS (primary KPI) <br> - Total Ad Spend <br> - Total Campaigns <br> - CPC (Cost per Click) <br> - CPM (Cost per Mille) <br> - CTR (Click Through Rate) <br> - Total Spend <br><br> **Slicers:** Date (Day/Week/Month), Campaign Name | - Bar Chart: Top 10 Campaigns by ROAS / Ad Sales <br> - Marketing Funnel: Impression → Click → CMT+IB → Ad Orders <br> - Clustered Bar Chart: Bottom 10 Campaigns by ROAS / Ad Spend / Ad Sales | - Matrix Table: Week (Hierarchy: Week, Day, Campaign, Product) <br> - Metrics: ROAS, Ad Sales, Ad Spend, Total Budget, Total Impressions, Total Clicks, Cost per CMT+IB, Total CMT+IB <br> - Parameter: CPC / CPM / CTR by Week |  |
+| **View 3 – Product Analysis (Page 3)** | - ROAS <br> - Ad Sales <br> - Ad Spend <br> - Total Orders <br> - CPA (Cost per Order) <br> - AVO <br><br> **Slicer:** Date (Day/Week/Month), Product Category | - Scatter Plot: ROAS vs Ad Sales vs Ad Spend by Product Name <br> - Horizontal Bar Chart: Campaign Name, Product Sold, ROAS <br> - Stacked Column Chart: Direct Sales vs Ad Sales by Product Type | - Table Matrix: Product ROAS & Campaign Performance Summary <br>   Columns: Product Name, Number of Products Sold, ROAS, Ad Sales, Ad Spend, Sales by Week (Mini Chart), Budget, Ad Spend/Budget (%) <br> - Stacked Bar Chart: CPA by Product (Cost per Order comparison) | - Drill-through: Detailed Marketing Campaign view by Product & Total Orders (Scorecard) |
+
+### 4️⃣ Prototype and Review
+This phase is implemented and validated directly within the interactive dashboard.
+
+---
+
+## 📊 Key Insights & Visualizations
+
+### 🔍 Dashboard Preview
+
+### I. Business Overview
+
