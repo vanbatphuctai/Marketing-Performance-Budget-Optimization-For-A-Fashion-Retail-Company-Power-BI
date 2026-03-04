@@ -13,46 +13,73 @@
 - [🔎 Final Conclusion & Recommendation](#-final-conclusion--recommendation)
 
 ---
+## 📌 Background & Overview  
 
-## 📌 Background & Overview
+### 👗 Fashion Retail - Business Context  
 
-### 🎯 Objective
-Developed a Power BI dashboard to analyze marketing spending efficiency and its impact on sales performance for a fashion retail & e-commerce company.  
+The company operates in the **fashion retail and e-commerce industry**, offering seasonal apparel collections and lifestyle products through both online and offline channels.  
 
-The project transforms raw marketing and sales data into actionable insights, supporting leadership in optimizing marketing budget allocation and improving ROI.  
+Growth is heavily driven by **multi-channel marketing campaigns**, including paid digital advertising, performance media, and promotional activations. Revenue performance is closely tied to marketing execution efficiency and SKU-level campaign effectiveness.
 
-### The analysis focuses on:
-- Evaluating overall marketing spend vs. revenue performance  
-- Measuring campaign effectiveness across channels and SKUs  
-- Identifying high-ROI campaigns and underperforming investments  
-- Supporting data-driven budget optimization strategies  
+As competition intensifies and customer acquisition costs increase, leadership requires deeper visibility into how marketing investments translate into sales outcomes and overall profitability.
 
 ---
 
-### 👤 Target Users
-- C-Level Executives (CEO, CMO)  
-- Marketing Managers  
-- Sales & E-commerce teams  
-- Business/Data Analysts  
+### 🎯 Business Objective  
+
+Executive leadership needs a connected view of:
+
+- Marketing spend allocation across campaigns and SKUs  
+- Revenue performance influenced by advertising activities  
+- ROI and efficiency metrics at campaign and product level  
+
+The objective is to optimize marketing budget utilization by linking **Spend → Traffic → Conversion → Revenue Impact**, ensuring sustainable and performance-driven growth.
 
 ---
 
-### ❓ Key Business Questions
-- How effectively is marketing budget being utilized?  
-- Which campaigns, channels, and SKUs generate the highest ROI?  
-- Are we overspending on low-performing campaigns?  
-- How can budget allocation be optimized to maximize revenue and profitability?  
+### ❗ Why This Analysis Matters  
+
+In fashion retail, aggressive marketing without performance control can quickly erode margins.
+
+Without structured analysis:
+
+- Budget allocation may favor high-spend but low-ROI campaigns  
+- Revenue growth may not translate into profitability  
+- High-performing SKUs may be underfunded  
+- Marketing cost inflation may outpace revenue contribution  
+
+This analysis provides a consolidated view of **marketing efficiency, sales contribution, and SKU-level profitability**, enabling data-driven budget optimization and tactical campaign adjustments.
 
 ---
 
-### 🎯 Project Outcome
-Marketing activities significantly contributed to revenue generation; however, performance varied widely across campaigns and SKUs.  
+### 👤 Target Users  
 
-Some campaigns delivered strong ROI and high conversion efficiency, while others consumed large budgets with limited incremental revenue impact.  
+- Senior Management  
+- Marketing Directors  
+- Performance Marketing Teams  
+- E-commerce Managers  
+- Finance & Strategy Teams  
+- Business Intelligence Analysts  
 
-SKU-level analysis revealed that certain product categories responded strongly to paid marketing, while others showed low return despite high ad spend.  
+---
 
-The dashboard enables leadership to align budget allocation, campaign performance, and revenue growth strategy, ensuring more efficient marketing investments.  
+### ❓ Key Business Questions  
+
+- How effectively does marketing spend convert into revenue?  
+- Which campaigns and SKUs deliver the highest ROI?  
+- Is budget allocation aligned with revenue contribution?  
+- Where are inefficiencies impacting marketing profitability?  
+
+---
+
+### 📊 Project Outcome  
+
+- Identified high-spend campaigns with declining marginal ROI → budget reallocation opportunities  
+- Revealed SKU-level performance gaps between revenue contribution and advertising cost  
+- Highlighted campaigns with strong CTR but weak revenue conversion → funnel optimization required  
+- Established clear performance tiers to guide future budget prioritization  
+
+This project enables alignment between **marketing investment strategy, product performance management, and revenue quality improvement**, supporting scalable and data-driven growth.
 
 ---
 
@@ -243,120 +270,20 @@ The dataset consists of four relational tables, connecting marketing investment 
 
 ### 1️⃣ Empathize  
 
-### 🧠 STAGE 1: EMPATHIZE – 5W1H  
-
-| Who will view this Dashboard? | What problem does this dashboard solve? | When and where will stakeholders view this dashboard? | Why is this analysis needed? | How do stakeholders make decisions? |
-|--------------------------------|------------------------------------------|--------------------------------------------------------|------------------------------|--------------------------------------|
-| - Head of Marketing <br> - Marketing Manager <br> - Marketing Team Members <br> - Sales Department | - Strategic dashboard. <br> - Provides a comprehensive overview of marketing budget spending and performance across marketing campaigns. <br> - Connects marketing activities to revenue and overall sales performance. <br> - Tracks marketing budget efficiency based on KPIs. <br> - Supports recommendations for performance improvement. | **When:** <br> - During strategic meetings and weekly/monthly/quarterly performance reviews. <br><br> **Where:** <br> - On mobile devices or laptops. <br> - During presentations (drill-through, drill-down, tooltip). <br> - Used in meeting rooms or shared internally. | - To adjust strategy promptly when market conditions change. <br> - To present performance results to the Board of Directors or related departments. <br> - To allocate budget effectively across channels and campaigns. <br> - To define marketing direction aligned with customer behavior and trends. | - Through intuitive dashboards: charts, KPIs, heatmaps, trendlines. <br> - Flexible filters (campaign, time, product, revenue). <br> - Integrated alerts (e.g., high CPM, declining ROI). <br> - Easy interaction via drill-down and hover to view details. |
-| **If only one key stakeholder is chosen, who would it be?** | **Summarize the problem in one sentence:** |  |  |  |
-| (Senior) Marketing Manager | Help the Marketing Manager clearly understand campaign effectiveness to make faster decisions. |  |  |  |
-
-
-### 🧠 STAGE 1: EMPATHY MAP  
-
-| Thinking & Feeling <br><sub>What does the stakeholder think and feel?</sub> | Seeing <br><sub>What does the stakeholder see?</sub> | Saying & Doing <br><sub>What does the stakeholder say and do?</sub> |
-|--------------------------------|--------------------------------|--------------------------------|
-| **Thinking** <br> - Is the budget being overspent or wasted? <br> - Which campaign is performing well? <br> - How can I gain an overall view without checking too many reports? <br><br> **Feeling** <br> - Overwhelmed by information, difficult to control. <br> - Worried about not fully understanding each campaign. <br> - Under pressure to make quick decisions but lacking consolidated data. | - Multiple campaigns running simultaneously from agencies and internal teams. <br> - Reports from different sources that are inconsistent and disconnected. <br> - No single dashboard to track budget and performance by campaign. <br> - Struggles to comprehensively monitor and evaluate campaign performance. | **Saying** <br> - "I need to understand the overall effectiveness, not just individual campaigns." <br> - "I want to know which campaign is consuming the most budget and generating the best results." <br><br> **Doing** <br> - Makes strategic decisions based on consolidated data. <br> - Allocates budget across campaigns. <br> - Evaluates performance and reports to higher management. <br> - Adjusts campaigns when performance does not meet expectations. |
-| **Pains** <br><sub>What are the biggest problems and challenges?</sub> |  | **Gains** <br><sub>What are the opportunities and benefits?</sub> |
-| - Data is fragmented and not standardized. <br> - Lack of effective campaign performance consolidation tools. <br> - Difficult to compare campaigns to optimize budget allocation. <br> - Time-consuming manual data aggregation with high risk of errors. |  | - Centralized data from multiple sources into one unified system, saving time and effort. <br> - Faster and more accurate decision-making through clear data visualization. <br> - More effective marketing budget optimization by comparing campaign performance. <br> - Early detection of risks or opportunities for timely campaign adjustments. |
-
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/ca4cd75c-ab79-4983-9206-cc15bc6cecab" />
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/496567e6-e546-451d-a846-ac7733bec1bc" />
 
 ### 2️⃣ Define Point of View  
 
-### 🚀 STAGE 2: MARKETING STAKEHOLDER JOURNEY  
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/6b9f0a17-3ea3-4ec4-8953-533701592e0f" />
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/65691566-6200-4b48-8575-92e96e14e9d9" />
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/ab37f472-0372-4e1c-88b1-9371ee250f57" />
 
-| Step | Description |
-|------|------------|
-| 🟢 **Step 1 – Marketing Performance Assessment** | Based on the current marketing performance, the Head of Marketing and Marketing Manager need to understand overall campaign effectiveness, budget utilization, ROI trends, and channel performance. If performance is strong, they may scale high-performing campaigns or increase budget allocation. |
-| 🔵 **Step 2 – Data Insights & Dashboard** | To gain clear visibility, stakeholders collaborate with Data Analysts to build dashboards that consolidate campaign data (budget, CPC, ROI, conversions, revenue impact). The dashboard helps identify which campaigns, channels, or products are driving the best results. |
-| 🟣 **Step 3 – Strategy & Budget Optimization** | Based on dashboard insights, stakeholders conduct meetings to adjust marketing strategy, reallocate budgets across campaigns, optimize channel mix, and refine targeting to improve overall performance. |
-| 🟠 **Step 4 – Execution & Performance Monitoring** | Optimized campaigns are executed, and performance metrics are continuously monitored. Budget adjustments, campaign scaling, or performance corrections are made based on updated data and KPI tracking. |
-
-
-### 🚀 STAGE 2: NORTHSTAR METRICS & DEFINE POV  
-
-### NORTHSTAR METRICS  
-
-|                          | **NORTH STAR 1** | **NORTH STAR 2 (Optional)** |
-|--------------------------|------------------|-----------------------------|
-| **What VALUE do you want to measure?** | Measure whether marketing activities are effective and generate value from the allocated budget. |  |
-| **WHEN does the value indicate DELIVERY SUCCESS?** | When ROAS reaches or exceeds the company’s expected profitability threshold. <br><br> Example: If ROAS ≥ 3.0, it means every $1 spent on advertising generates at least $3 in revenue. |  |
-| **Northstar Metric Name** | ROAS (Return on Ad Spend) |  |
-| **WHY do you choose this metric?** | - ROAS reflects actual return on marketing investment. <br> - Helps identify which campaigns are creating real value and which are wasting budget. <br> - Supports budget optimization and data-driven decision-making. <br> - Enables real-time performance tracking and timely adjustments. |  |
-
-
-### DEFINE POINT OF VIEW  
-
-| Dimension | View 1 | View 2 | View 3 | View 4 | View 5 | View 6 | View 7 |
-|------------|----------|----------|----------|----------|----------|----------|----------|
-| Brainstorming Point of View | Overall Business | Marketing Campaign | Product (SKU) | Time | Customer | Geography / Region | Budget & Cost |
-
-
-### DEFINE KEY BUSINESS VIEWS  
-
-| View | Description | Why do stakeholders need this view? |
-|------|------------|--------------------------------------|
-| View 1 – Overview | Overall business overview. | - Total revenue, profit, marketing cost, growth rate. <br> - Compare direct sales vs marketing-driven sales. |
-| View 2 – Marketing Analysis | Marketing campaign performance. | - Campaign effectiveness (ROAS, CTR, CPC, revenue by campaign). |
-| View 3 – Product Analysis | Performance by product or product group. | - Revenue, cost, and ROI by product/SKU. |
-| View 4 – Time | - Daily, weekly, monthly, quarterly trend analysis to identify patterns and seasonality. |
-
-
-### NORTHSTAR FORMULA: GROWTH FORMULA – ROAS  
-
-| Breakdown | Formula |
-|------------|----------|
-| **NORTHSTAR Formula** | **ROAS = Advertising Revenue / Advertising Cost** |
-| Growth formula breakdown by View 1 (Overall Marketing) | **Overall ROAS** = Total Marketing Revenue / Total Advertising Cost |
-| Growth formula breakdown by View 2 (Campaign) | **Campaign ROAS** = Campaign Revenue / Campaign Cost |
-| Growth formula breakdown by View 3 (Product / SKU) | **Product ROAS** = SKU Revenue / SKU Marketing Cost |
-| Growth formula breakdown by View 4 (Time) | **Time-based ROAS** = Revenue by Time Period / Advertising Cost by Time Period |
 
 ### 3️⃣ Ideate
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/3b4bec41-f112-4c54-aaf0-2858545486f7" />
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/af6f6cf9-44f2-4418-b481-43aaafe1c982" />
 
-### STAGE 3: IDEATE – BRAINSTORMING
-
-**Start with:**  
-Based on the Growth Formula breakdown of each view, brainstorm related dimensions and insights aligned with the NorthStar Metric.
-
----
-
-#### Overview Layer (Core Metrics)
-
-| Metric 1 | Metric 2 | Metric 3 | Metric 4 | Metric 5 | Metric 6 |
-|----------|----------|----------|----------|----------|----------|
-| Return on Ad Spend (ROAS) | Ad Spend | Ad Sales | Total Clicks | Marketing Share | Direct Sales |
-
-| Metric 7 | Metric 8 | Metric 9 | Metric 10 | Metric 11 | Metric 12 |
-|----------|----------|----------|-----------|-----------|-----------|
-| CPC | CPM | CTR | Total Campaigns | AOV | Cost per Acquisition (CPA) |
-
----
-
-#### Brainstorming Breakdown
-
-| Idea Name | Layer 0 Dimension (Overall) | Layer 1 Dimension (1D Breakdown) | Layer 2 Dimension (2D Breakdown) | Anything Important Missed? |
-|------------|----------------------------------|-----------------------------------|-----------------------------------|----------------------------|
-| **View 1: Marketing Overview** | - Total ROAS <br> - Ad Spend <br> - Ad Sales <br> - Direct Sales <br> - Total Clicks <br> - Marketing Share (Sales on Marketing / Total Revenue) | - Track ROAS performance over time (Day/Week/Month) <br> - Compare campaign effectiveness <br> - Identify highest-performing product categories | - Compare revenue mix: Ad Sales vs Direct Sales by Product Type <br> - Manage Ad Spend vs Budget <br> - Map ROAS & Ad Sales by region (Vietnam) | |
-| **View 2: Marketing Analysis** | - ROAS (Primary KPI) <br> - Total Active Campaigns <br> - Total Spend <br> - CPC (Cost per Click) <br> - CPM (Cost per 1,000 Impressions) <br> - CTR (Click-Through Rate) | - Top 10 campaigns by ROAS & Ad Sales <br> - Funnel tracking: Impressions → Clicks → Ad Orders <br> - Detect high-spend but low-return campaigns | - Weekly campaign summary (ROAS, Spend, Clicks, Orders) <br> - Trend analysis of CPC / CPM / CTR over time <br> | |
-| **View 3: Product Analysis** | - ROAS <br> - Ad Sales <br> - Ad Spend <br> - Total Ad Orders <br> - CPA (Cost per Ad Order) <br> - AOV (Average Order Value) | - Evaluate advertising effectiveness for each product (SKU) <br> - Top 10 advertising campaigns by product sales performance <br> - Revenue structure (Ad Sales / Total Sales) contributed by each Product Type | - Summarize marketing performance by product → clearly show the relationship between spend – revenue – efficiency – budget  <br> - Measure advertising spending efficiency by product → determine how much advertising cost is required to generate one order | |
-
-### STAGE 3: IDEATE – STRUCTURE IDEA
-
-#### Scorecard Metrics
-
-| Metric 1 | Metric 2 | Metric 3 | Metric 4 | Metric 5 | Metric 6 |
-|----------|----------|----------|----------|----------|----------|
-| Return on Ad Spend (ROAS) | Ad Spend | Ad Sales | Total Clicks | Marketing Share | Direct Sales |
-
----
-#### Structured Idea Breakdown
-
-| Idea Name | Very Important Information | Important Information | Detailed Information | Anything Important Missed? |
-|------------|----------------------------|------------------------|----------------------|----------------------------|
-| **View 1 – Marketing Overview (Page 1)** | **KPI Cards:** <br> - Total ROAS <br> - Ad Sales <br> - Direct Sales <br> - Total Orders <br> - Total Ad Spend <br> - Marketing Contribution Ratio (Ad Sales / Total Sales) <br><br> **Slicers:** Date (Day/Week/Month), Product Category, Campaign Name | - Line Chart: ROAS Trend over Time (vs Ad Sales & Ad Spend) <br> - Bar Chart: Top 5 Campaigns by ROAS <br> - Bar Chart: ROAS by Product Type | - Pie Chart: Ad Sales vs Direct Sales <br> - Gauge: Ad Spend vs Budget (Target) <br> - Map: ROAS vs Total Spend vs Ad Sales by Region (Vietnam) |  |
-| **View 2 – Marketing Analysis (Page 2)** | - ROAS (primary KPI) <br> - Total Ad Spend <br> - Total Campaigns <br> - CPC (Cost per Click) <br> - CPM (Cost per Mille) <br> - CTR (Click Through Rate) <br> - Total Spend <br><br> **Slicers:** Date (Day/Week/Month), Campaign Name | - Bar Chart: Top 10 Campaigns by ROAS / Ad Sales <br> - Marketing Funnel: Impression → Click → CMT+IB → Ad Orders <br> - Clustered Bar Chart: Bottom 10 Campaigns by ROAS / Ad Spend / Ad Sales | - Matrix Table: Week (Hierarchy: Week, Day, Campaign, Product) <br> - Metrics: ROAS, Ad Sales, Ad Spend, Total Budget, Total Impressions, Total Clicks, Cost per CMT+IB, Total CMT+IB <br> - Parameter: CPC / CPM / CTR by Week |  |
-| **View 3 – Product Analysis (Page 3)** | - ROAS <br> - Ad Sales <br> - Ad Spend <br> - Total Orders <br> - CPA (Cost per Order) <br> - AVO <br><br> **Slicer:** Date (Day/Week/Month), Product Category | - Scatter Plot: ROAS vs Ad Sales vs Ad Spend by Product Name <br> - Horizontal Bar Chart: Campaign Name, Product Sold, ROAS <br> - Stacked Column Chart: Direct Sales vs Ad Sales by Product Type | - Table Matrix: Product ROAS & Campaign Performance Summary <br>   Columns: Product Name, Number of Products Sold, ROAS, Ad Sales, Ad Spend, Sales by Week (Mini Chart), Budget, Ad Spend/Budget (%) <br> - Stacked Bar Chart: CPA by Product (Cost per Order comparison) | - Drill-through: Detailed Marketing Campaign view by Product & Total Orders (Scorecard) |
 
 ### 4️⃣ Prototype and Review
 This phase is implemented and validated directly within the interactive dashboard.
